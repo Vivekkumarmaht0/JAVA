@@ -1,0 +1,15 @@
+import numpy as np
+from scipy.spatial import distance_matrix
+
+# Create the matrices
+x = np.array([[1, 2], [2, 1], [2, 2]])
+y = np.array([[5, 0], [1, 2], [2, 0]])
+
+# Display the matrices
+print("matrix x:\n", x)
+print("matrix y:\n", y)
+
+# Compute the distance matrix
+dist_mat = distance_matrix(x, y, p=2)
+
+print("Distance Matrix:\n", dist_mat)
